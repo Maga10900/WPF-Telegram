@@ -1,0 +1,335 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="Telegram" Height="550" Width="900" Icon="/Photos/telegram.png" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Sol Teref-->
+        <DockPanel>
+            <!--3 Xett Ve Search Bar-->
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Button Width="55" Background="Transparent" BorderThickness="0" Margin="2">
+                    <Image Source="/Photos/menu (1).png" />
+                </Button>
+                <TextBox Width="200" Margin="20 5 10 5" Background="LightGray" BorderThickness="0" FontSize="28"/>
+            </StackPanel>
+
+
+
+            <!--Userslerin Goorsendiyi yer-->
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <!--Element 1-->
+                    <Grid Height="75" Background="LightSkyBlue">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="Red" Width="58" Height="58"/>
+                            <Label Content="MF" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Mehemmed Fetullayev" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="White"/>
+                            <Label Content="Step IT Academy => 👑" Foreground="White" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="15:00" Foreground="White" FontSize="12" Margin="0 7 0 0"/>
+                            <Image Source="/Photos/25-252939_thumbtack-pin-icon-white-transparent.png" Width="18" Margin="0 10"/>
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="LightGreen" Width="58" Height="58"/>
+                            <Label Content="RM" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Ruslan Memmedov" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="Salam, qaqa necesen" Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="14:47" Foreground="Gray" FontSize="12" Margin="0 7 0 0"/>
+                            <Grid Height="40">
+                                <Ellipse Width="20" Height="20" Fill="LightSkyBlue"/>
+                                <Label Content="1" FontSize="15" Margin="10 5 0 0"/>
+                            </Grid>
+
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="Orange" Width="58" Height="58"/>
+                            <Label Content="JP" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="John Pred" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="None" Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="13:00" Foreground="Gray" FontSize="12" Margin="0 7 0 0"/>
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="Purple" Width="58" Height="58"/>
+                            <Label Content="AT" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Aqshin Tagiyev" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="Ok." Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="12:00" Foreground="Gray" FontSize="12" Margin="0 7 0 0"/>
+                            <Grid Height="40">
+                                <Ellipse Width="20" Height="20" Fill="LightSkyBlue"/>
+                                <Label Content="1" FontSize="15" Margin="10 5 0 0"/>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="CadetBlue" Width="58" Height="58"/>
+                            <Label Content="MF" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Ibrahim Talibli" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="Sabah gederik" Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="11:21" Foreground="Gray" FontSize="12" Margin="0 7 0 0"/>
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="Khaki" Width="58" Height="58"/>
+                            <Label Content="FO" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Ferid Orucov" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="Oyuna girirsen qaqa" Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="19:00" Foreground="gray" FontSize="12" Margin="0 7 0 0"/>
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="Magenta" Width="58" Height="58"/>
+                            <Label Content="MF" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Seccad Elizade" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="Yox" Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="00:00" Foreground="Gray" FontSize="12" Margin="0 7 0 0"/>
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="LimeGreen" Width="58" Height="58"/>
+                            <Label Content="HM" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Huseyn Memmedov" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="Yaxsi gaga" Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="08:06" Foreground="Gray" FontSize="12" Margin="0 7 0 0"/>
+                        </StackPanel>
+                    </Grid>
+
+
+
+
+
+
+
+
+                    <Grid Height="75" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="5">
+                            <Ellipse Fill="LightGray" Width="58" Height="58"/>
+                            <Label Content="TN" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="28"/>
+                        </Grid>
+
+
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Teymur Novruzov" FontSize="14" FontWeight="Bold" Margin="0 5 0 0" Foreground="Black"/>
+                            <Label Content="Voice Messaje🎙️(0:12)" Foreground="Gray" FontSize="13" Margin="0 5 0 0"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Label Content="22:54" Foreground="Gray" FontSize="12" Margin="0 7 0 0"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </DockPanel>
+
+
+
+        <Grid Grid.Column="1">
+            <DockPanel>
+                <StackPanel Height="60" DockPanel.Dock="Top" Orientation="Horizontal">
+                    <StackPanel>
+                        <Label Content="Mehemmed Fetullayev" FontSize="20" FontWeight="Bold" Margin="50 0 0 0"/>
+                        <Label Content="Online" Foreground="LightSkyBlue" FontSize="16" FontWeight="Bold" Margin="50 0 0 0"/>
+                    </StackPanel>
+
+                    <Image Source="/Photos/search.png" Margin="230 0 0 0" Width="45"/>
+
+                    <Image Source="/Photos/more.png" Width="35" Margin="18 0 0 0"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" Height="60">
+                    <Image Source="/Photos/download.png" Width="40" Margin="20 0 0 0"/>
+
+                    <TextBox Width="400" Margin="20 5 0 5"  Background="WhiteSmoke" FontSize="25"/>
+                    <Image Source="/Photos/download (1).png" Width="35" Margin="15 0 0 0" />
+                    <Image Source="/Photos/sound.png" Width="35" Margin="15 0 0 0"/>
+
+                </StackPanel>
+
+                <Grid Background="LightGray" />
+            </DockPanel>
+        </Grid>
+    </Grid>
+</Window>
